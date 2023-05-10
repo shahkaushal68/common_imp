@@ -1,0 +1,58 @@
+
+
+git init      // Initilize the project
+git add .     // add all files and folders
+git commit -m "first commit"
+git branch -M main
+git remote add origin ""
+git push -u origin main
+
+git status // for check tracking status
+
+-------------// set url--------------------
+git remote set-url origin "new.git.url"
+
+-------------// Show url--------------------
+
+git remote show origin 
+
+--------------// create new branch------------------
+
+git branch <new_branch_name> 
+
+---------------//switch to those branch--------------------
+
+git checkout <new_branch_name> 
+
+----------------//Create New Git Branch From Current Branch-------------
+
+git checkout -b <new_branch_name> 
+
+------------Create New Git Branch From a Different Branch-------------------
+
+git checkout -b <new_branch_name> <specific_different_branch> 
+
+git merge BranchA //merge branchA code into current branch
+
+--------------------// delete branch locally-------------------
+
+git branch -d localBranchName
+
+----------------// delete branch remotely---------------------------------
+
+git push origin --delete remoteBranchName
+
+
+-------------------//remove git from current proejct-------------------------
+
+rm -rf .git
+
+
+
+Copy content of BranchA into BranchB
+
+git checkout BranchA
+git pull origin BranchB
+git push -u origin BranchA
+
+
